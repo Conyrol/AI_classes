@@ -18,7 +18,7 @@ import mavonEditor from 'mavon-editor'
 import 'mavon-editor/dist/css/index.css'
 Vue.use(mavonEditor);
 
-Vue.prototype.$main_url = "http://127.0.0.1:8080";
+Vue.prototype.$main_url = "https://ai-classes-conyrol.vercel.app";
 Vue.config.productionTip = false;
 
 new Vue({
