@@ -2,6 +2,8 @@ import Vue from 'vue';
 import VueRouter from 'vue-router'
 import mainPage from '../views/mainPage.vue'
 import aboutPage from '../views/aboutPage.vue'
+import linkPage from '../views/linkPage.vue'
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -14,6 +16,11 @@ const routes = [
         path: '/about',
         name: 'aboutPage',
         component: aboutPage
+    },
+    {
+        path: '/link',
+        name: 'linkPage',
+        component: linkPage
     },
 ]
 

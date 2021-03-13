@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>canvas_1</title>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<style>
+body{
+	text-align: center;
+	padding-top: 20px;
+}
+#test{
+	box-shadow: 0 0 10px #333;
+	margin: 0 auto;
+}
+</style>
+</head>
+
+<body onload = "draw()">
+    <canvas id = "test" width = "500" height = "500"></canvas>
+    <script>
+		function draw(){
+			var canvas = $("#test")[0];
+			if(canvas.getContext){
+				var ctx = canvas.getContext('2d');
+				canvas.onmousedown = function(e){
+					var ev = e || windows.event;
+					var x = ev.clientX - canvas.offsetLeft;
+					var y = ev.clientY - canvas.offsetTop;
+					
+					ctx.strokeStyle = 'green';
+					ctx.lineCap = "round";
+					ctx.lineWidth = 3;
+					ctx.beginPath();
+					ctx.moveTo(x, y);
+					
+					canvas.onmousemove = function(e){
+						var ev = e || windows.event;
+						var xto = ev.clientX - canvas.offsetLeft;
+						var yto = ev.clientY - canvas.offsetTop;
+						ctx.lineTo(xto, yto);
+						ctx.stroke();
+					}
+					canvas.onmouseup = function(){
+						canvas.onmousemove = null;
+					}
+				}
+			}
+			else alert("你的浏览器不支持canvas");
+		}
+    </script>
+</body>
+</html>

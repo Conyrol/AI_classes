@@ -16,6 +16,7 @@ export default {
 <style>
 @import "./assets/css/base.css";
 #app {
+  height: 100%;
   min-height: 100%;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
