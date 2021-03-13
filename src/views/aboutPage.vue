@@ -1,5 +1,7 @@
 <template>
-  
+  <div class = "about-page">
+    123
+  </div>
 </template>
 
 <script>

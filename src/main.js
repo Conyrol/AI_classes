@@ -13,7 +13,7 @@ Vue.use(ElementUI);
 import less from 'less';
 Vue.use(less);
 
-Vue.prototype.$main_url = "http://127.0.0.1";
+Vue.prototype.$main_url = "http://127.0.0.1:8080";
 Vue.config.productionTip = false;
 
 new Vue({
