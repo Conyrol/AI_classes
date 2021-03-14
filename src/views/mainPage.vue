@@ -21,7 +21,7 @@
       <div class = "main-div">
         <transition-group name = "fade">
           <div class = "content-item flexDiv_row3" v-for = "(i, index) in data_list" :key = "index">
-            <el-tooltip content = "Bottom center" placement = "bottom" effect = "light">
+            <el-tooltip :content = "i.extract_code" placement = "bottom" effect = "light">
               <div class = "item-index">{{ i.index }}</div>
             </el-tooltip>
             <div class = "item-main">
@@ -92,9 +92,10 @@
           title: "人工智能真有这么有趣？",
           content: "这没有什么智械危机，也没有什么哲学伦理探讨，更不会有晦涩难懂的公式推导(或许会有?)，只有一个个有趣且简单的项目，如果你问我人工智能真能有这么有趣？那我只能说是的。可惜人工智能实在是太广了，这个兴趣开放课程只会带你领略他的冰山一角(CV方向)，但如果你跟着完成了以下的任务，那么一定会对人工智能有一个初步的了解，并且能上手属于自己的项目。",
           img_src: require('../assets/images/0.png'),
-          article_src: '#',
+          article_src: 'https://pan.baidu.com/s/1IWzKn9zVBnxKCvbOyoFvmw',
+          extract_code: '提取码 0000',
           ddl_date: [],
-          create_date: ['2021', '3', '15'],
+          create_date: ['2021', '3', '14'],
         },
         {
           index: 1,
@@ -102,10 +103,11 @@
           title: "学习人工智能的工具",
           type: 0,
           img_src: require('../assets/images/1.png'),
-          article_src: '#',
+          article_src: 'https://pan.baidu.com/s/1ankVNpTPhlexky47UhKR4w',
           content: "行行都有自己的工具，人工智能也不例外。不过谢天谢地，人工智能一般只需要掌握一个工具就能使出18般武艺了，这个工具就是 python。那么第一个需要上手且有可恶的DDL的任务就来了，这个任务将会引导你配置环境，并运行一份小项目来确认环境配置的正确性。",
+          extract_code: '提取码 0000',
           ddl_date: ['2021', '3', '21'],
-          create_date: ['2021', '3', '15'],
+          create_date: ['2021', '3', '14'],
         },
         {
           index: 2,
@@ -115,6 +117,7 @@
           img_src: require('../assets/images/2.png'),
           article_src: '#',
           content: "万事开头难！这个实验将会梳理机器学习和深度学习的基本思路，并使用深度学习中最常见的全连接网络(FC)，做出一些简单的效果，你可以尝试拆分和修改 demo 项目中的代码，来完成我们布置的一个小任务，代码量不多，而且在实验进行过程中有什么困难会开设答疑会的。",
+          extract_code: '还没开始呢😅',
           ddl_date: ['2021', '3', '28'],
           create_date: ['2021', '3', '22'],
         },
@@ -126,6 +129,7 @@
           img_src: require('../assets/images/3.png'),
           article_src: '#',
           content: "由于课程课时关系，我们把实验的重心放在深度学习的图像任务上，因为图像任务出结果更直观，实验也更加有趣，如果有想学习关于自然语言任务或者更纯粹的机器学习的同学，我们可能会根据情况开设对应的课程。不过人工智能一通百通，当你了解了整体的思路以后，你也可以自己取尝试学习不同方向的人工智能。",
+          extract_code: '还没开始呢😅',
           ddl_date: [],
           create_date: ['2021', '3', '29'],
         },
@@ -137,6 +141,7 @@
           img_src: require('../assets/images/4.png'),
           article_src: '#',
           content: "图像分类任务在日常生活中数不胜数，比如说群聊中判断一个图是否是色图，又或是鉴别一张图片拍摄的是什么东西，可以说这个任务无处不在，而有了深度学习，你就可以全自动的让网络帮你做这件事。这个实验将使用最传统的 CIFAR-10 数据集作为 demo 完成全连接到卷积的过渡，最后实验会有一个我在网上爬取的数据集，你可以试试你的网络在这个数据集上的训练效果，如果效果不是很好，你可以思考一下怎么优化。",
+          extract_code: '还没开始呢😅',
           ddl_date: ['2021', '4', '04'],
           create_date: ['2021', '3', '29'],
         },
@@ -148,6 +153,7 @@
           img_src: require('../assets/images/4+.png'),
           article_src: '#',
           content: "分类任务明明简单基础，可是准确率却上不来？不要慌！是时候让 tricks 和 better network 上场了。这次实验，我们将探讨不同的 tricks 和 network 到底为什么好，怎么去用。并且会放出 plus 版的分类数据集，你可以在上面试一试怎么组合这些 tricks 和 network 能得到最好的效果。",
+          extract_code: '还没开始呢😅',
           ddl_date: ['2021', '4', '11'],
           create_date: ['2021', '4', '05'],
         },
@@ -159,6 +165,7 @@
           img_src: require('../assets/images/5.png'),
           article_src: '#',
           content: "目标检测是人工智能行业中最常见的任务，其体系已经非常完善，如果想去一一了解，那需要花费很长时间，所以本次实验只涉及目标检测中最知名的网络 —— yolo 系列。不过即使是这样，复现一份 yolo 代码也需要花费大量的时间和精力，这样课程得不偿失，所以这次实验会使用我给你们安排好的 yoloV3 框架，你需要做的是在训练的过程中了解它的原理和工作流程，以便以后你可以轻松上手其他目标检测网络。",
+          extract_code: '还没开始呢😅',
           ddl_date: ['2021', '4', '23'],
           create_date: ['2021', '4', '12'],
         },
@@ -170,6 +177,7 @@
           img_src: require('../assets/images/6.png'),
           article_src: '#',
           content: "生成对抗网络无疑是 CV 领域最热门最有趣的方向之一，它的思想十分的新颖且直观，虽然实现能用的 GAN 有些难度，但有什么能阻挡大家生成自己想要的图像的热情呢？当然，为了不让大家在训练过程中抓狂，实验会使用比较基础的 GAN 网络。另外再提一句，GAN 素来以难以训练闻名，所以你在训练自己的 GAN 的时候如果结果很差，请别砸电脑，多调参改网络结构尝试就好了。",
+          extract_code: '还没开始呢😅',
           ddl_date: ['2021', '5', '02'],
           create_date: ['2021', '4', '24'],
         },
@@ -181,6 +189,7 @@
           img_src: require('../assets/images/7.png'),
           article_src: '#',
           content: "如果你认真的完成了上面的所有项目，那我相信你对人工智能会有了一个初步的了解(至少 CV 领域是了解了)，那么最后一个大实验就是用你学到的知识做一个项目，你可以选择我们提供的项目，也可以自己选择项目，甚至不限 CV 领域，只要你感兴趣都可以。但需要注意的是，这次从数据集获取到模型选择，再到训练调参都没有模板和 demo，需要由你来完成。(支持 2-3 人组队)",
+          extract_code: '还没开始呢😅',
           ddl_date: ['2021', '5', '11'],
           create_date: ['2021', '5', '03'],
         }],

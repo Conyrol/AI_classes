@@ -37,8 +37,8 @@ function starOrbit(distance, beginAngle, endAngle, width, color, speedAngle) {
 var color = ['rgb(249,205,173)', 'rgb(200,200,169)',  'rgb(29,131,8)', 'rgb(38,188,213)', 'rgb(226,17,0)', 'rgb(180,141,1)', 'rgb(204,202,169)', 'rgb(248,147,29)'];
 
 function starOrbitMove(object) {
-  var width = window.screen.width;
-  var height = window.screen.height;
+  var width = document.body.clientWidth;
+  var height = document.body.clientHeight;
   console.log(width, height);
   object.attr('width', width);
   object.attr('height', height);
